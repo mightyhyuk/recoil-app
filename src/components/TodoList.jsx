@@ -1,6 +1,8 @@
 import { useRecoilValue } from "recoil";
+
 import { filteredTodoListState } from "../lib/recoil-atoms";
 
+import TodoListStats from "./TodoListStats";
 import TodoListFilters from "./TodoListFilters";
 import TodoItemCreator from "./TodoItemCreator";
 import TodoItem from "./TodoItem";
@@ -10,7 +12,7 @@ function TodoList() {
 
   return (
     <>
-      {/* <TodoListStats /> */}
+      <TodoListStats />
       <TodoListFilters />
       <TodoItemCreator />
 
